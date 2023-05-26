@@ -1,0 +1,81 @@
+{
+
+    "intents": [
+      {
+      
+        "tag": "greeting",
+        "patterns": ["hi" ,"Hi there", "How are you", "Is anyone there?", "Hey", "Hola", "Hello", "Good day"],
+        "responses": ["Hello , i'm at your service", "Hi there, how can I help? "," Hi , this is galaxy cinema bot"],
+        "context": [""]
+      },
+      
+      {
+        "tag": "cinema_location",
+        "patterns": ["view the cinema" ,"where is the cinema", "see the cinema" , "cinema location"],
+        "responses": ["you can visit our cinema at : https://www.festivalcitymallcairo.com/home/whats-inside/entertainment/Galaxy+Cinema"],
+        "context": ["location"]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+        "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+        "context": [""]
+      },
+      {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+        "responses": ["My pleasure", "You're welcome"],
+        "context": [""]
+      },
+      {
+        "tag": "cancel_booking",
+        "patterns": ["cancel", "Can I cancel my movie ticket?", "How can I get a refund?","refund", "Cancel"],
+        "responses": ["I understand. To assist you with the cancellation type your transaction code then cancel , to get your refund "],
+        "context": ["booking"]
+      },
+      {
+        "tag": "confrim_cancelation",
+        "patterns": ["123456 cancel", "cancel 123456 ticket", "cancel my 123456 ticket"],
+        "responses": ["your ticket has been canceled "],
+        "context": ["booking"]
+      },
+  
+      {
+        "tag": "movies_list",
+        "patterns": ["What movies are currently playing?", "Can you give me a list of movies?", "Which movies are showing today?", "Show me the available movies","show me","i want to book a ticket"],
+        "responses": ["Here are some of the movies currently playing: fast x , gaurdians of the galaxy3 , evil dead. Please let me know if you would like more details about any specific movie."],
+        "context": [""]
+      },
+      {
+        "tag": "ticket_reservation",
+        "patterns": ["fast x , gaurdians of the galaxy3 , evil dead at 12pm", "1 ticket for fast x , gaurdians of the galaxy3 , evil dead at 8pm", "fast x , gaurdians of the galaxy3 , evil dead movie at 4pm", "the fast x , gaurdians of the galaxy3 , evil dead at 1pm"],
+        "responses": ["Let me check that for you. Please provide me with your seat place, near or far from the screen?"],
+        "context": ["booking"]
+      },
+      {
+        "tag": "seat_selection",
+        "patterns": ["near","far","i want one or two seats near the screen", "i want one or two seats far the screen", "near the screen", "far from the screen"],
+        "responses": ["Let me check that for you, the available seats are near the screen for now"],
+        "context": ["booking"]
+      },
+      {
+        "tag": "confrim_ticket",
+        "patterns": ["paybal","fawry","mastercard","miza","visa","Confirm my ticket","confirm","Am I booked for the movie?", "Is my ticket confirmed?", "Has my booking been confirmed?"],
+        "responses": ["to confirm your ticket please pay the ticket fee with fawry or paypal to the number 123456789 , and send the transaction code"],
+        "context": ["booking"]
+      },
+      {
+        "tag": "payment",
+        "patterns": ["how can i book my ticket","payment","How do I pay for the tickets?", "What payment methods are accepted?", "Is online payment available?"],
+        "responses": ["We accept various payment methods, including credit cards, debit cards, and online payment systems to the number 123456789. You can choose your preferred payment method during the booking process."],
+        "context": ["booking"]
+      },
+        {
+          "tag": "transaction code",
+          "patterns": ["the code is 123456", "the transaction code is 123456", "here is the transaction code : 123456"],
+          "responses": ["the transaction is valid , your ticket numbers are: 1025 , you can recieve it at the cinema ticket window"],
+          "context": ["booking"]
+        }
+    ]
+  }
+  
